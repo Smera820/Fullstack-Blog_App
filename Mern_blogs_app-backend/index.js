@@ -13,7 +13,10 @@ const commentRoute = require('./routes/comments')
 
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: [
+        "http://localhost:5173",
+        "https://fullstack-blog-app-frontend-2o48.onrender.com"
+    ],
     credentials: true,
 };
 app.use(cors(corsOptions))
